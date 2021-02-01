@@ -1,0 +1,45 @@
+.track {
+  background-color: #fcf7f8;
+  width: 15%;
+  height: 400px;
+
+  background-position: center;
+  background-size: cover;
+  margin-right: 30px;
+  margin-top: 30px;
+  opacity: 0.65;
+  transition: 800ms;
+  border-radius: 10px;
+}
+
+.track:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.track__info {
+  margin-top: 5px;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+
+.track__info > p {
+  margin-top: 5px;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.397);
+}
+
+.track__info > h2 {
+  background-color: rgba(255, 255, 255, 0.397);
+}

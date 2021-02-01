@@ -1,0 +1,13 @@
+.main {
+  background-color: #0e141b;
+  display: flex;
+  flex-wrap: wrap;
+  height: 94vh;
+  padding: 0 2%;
+  overflow-y: scroll;
+}
+
+.main::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
