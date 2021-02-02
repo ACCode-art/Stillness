@@ -43,3 +43,32 @@
 .track__info > h2 {
   background-color: rgba(255, 255, 255, 0.397);
 }
+
+.track__infoButtons {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+}
+
+.track__infoButtons > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(251, 251, 251);
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: 400ms;
+}
+
+.track__infoButtons > button > .MuiSvgIcon-root {
+  font-size: 40px;
+}
+
+.track__infoButtons > button:hover {
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(200, 200, 200);
+}

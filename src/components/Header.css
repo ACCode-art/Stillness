@@ -28,6 +28,24 @@
   color: rgb(200, 200, 200);
 }
 
+.header__center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+
+.header__center > .MuiSlider-colorPrimary {
+  color: white;
+}
+
+.header__centerVolumeLeft {
+  padding-right: 8px;
+}
+.header__centerVolumeRight {
+  padding-left: 10px;
+}
+
 .header__right {
   display: flex;
   align-items: center;

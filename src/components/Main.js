@@ -3,6 +3,8 @@ import "./Main.css";
 import Track from "./Track";
 import From from "../backgrounds/from.jpg";
 import Music from "../music/sitg.mp3";
+import Red from "../music/Red is.mp3";
+import Green from "../music/green.mp3";
 
 function Main() {
   const infos = [
@@ -19,7 +21,7 @@ function Main() {
       length: "42mins",
       background:
         "https://images.unsplash.com/photo-1574732040274-b19191964908?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80",
-      src: "./music/sitg.mp3",
+      src: Red,
     },
     {
       key: 3,
@@ -27,9 +29,10 @@ function Main() {
       length: "22mins",
       background:
         "https://images.unsplash.com/photo-1513569771920-c9e1d31714af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
-      src: "/music/sitg.mp3",
+      src: Green,
     },
   ];
+
   return (
     <div className="main">
       {infos.map((info) => (

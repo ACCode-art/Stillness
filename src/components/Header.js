@@ -1,15 +1,31 @@
-import { Avatar } from "@material-ui/core";
-import { AirlineSeatFlat, Favorite, QueueMusic } from "@material-ui/icons";
-import React from "react";
+import { Avatar, Slider } from "@material-ui/core";
+import {
+  AirlineSeatFlat,
+  Favorite,
+  QueueMusic,
+  VolumeDown,
+  VolumeUp,
+} from "@material-ui/icons";
+import React, { useState } from "react";
 import "./Header.css";
 
 function Header() {
+  const [value, setValue] = useState(1);
+  const changeVolume = (event, newValue) => {
+    setValue(newValue);
+  };
   return (
     <div className="header">
       <div className="header__left">
         <AirlineSeatFlat />
         <p>Stillness</p>
       </div>
+      <div className="header__center">
+        <VolumeDown className="header__centerVolumeLeft" />
+        <Slider value={value} onChange={changeVolume} />
+        <VolumeUp className="header__centerVolumeRight" />
+      </div>
+
       <div className="header__right">
         <QueueMusic />
         <Favorite />

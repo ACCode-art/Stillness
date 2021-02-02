@@ -11,3 +11,7 @@
   width: 0px;
   background: transparent; /* make scrollbar transparent */
 }
+
+button {
+  height: 40px;
+}
