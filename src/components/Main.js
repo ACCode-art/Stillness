@@ -6,7 +6,7 @@ import Music from "../music/sitg.mp3";
 import Red from "../music/Red is.mp3";
 import Green from "../music/green.mp3";
 
-function Main() {
+function Main({ value, setInfo, setIsPlaying }) {
   const infos = [
     {
       key: 1,
@@ -42,6 +42,9 @@ function Main() {
           background={info.background}
           src={info.src}
           key={info.key}
+          value={value}
+          setInfo={setInfo}
+          setIsPlaying={setIsPlaying}
         />
       ))}
     </div>

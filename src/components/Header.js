@@ -6,14 +6,11 @@ import {
   VolumeDown,
   VolumeUp,
 } from "@material-ui/icons";
-import React, { useState } from "react";
+import React from "react";
 import "./Header.css";
 
-function Header() {
-  const [value, setValue] = useState(1);
-  const changeVolume = (event, newValue) => {
-    setValue(newValue);
-  };
+function Header({ value, setValue, changeVolume, info }) {
+  console.log(`this is the ${value}`);
   return (
     <div className="header">
       <div className="header__left">
@@ -21,9 +18,12 @@ function Header() {
         <p>Stillness</p>
       </div>
       <div className="header__center">
-        <VolumeDown className="header__centerVolumeLeft" />
-        <Slider value={value} onChange={changeVolume} />
-        <VolumeUp className="header__centerVolumeRight" />
+        <div className="header__centerTop">
+          <VolumeDown className="header__centerVolumeLeft" />
+          <Slider value={value} onChange={changeVolume} />
+          <VolumeUp className="header__centerVolumeRight" />
+        </div>
+        <p>{info}</p>
       </div>
 
       <div className="header__right">

@@ -1,13 +1,13 @@
 .track {
   background-color: #fcf7f8;
-  width: 15%;
+  width: 280px;
   height: 400px;
 
   background-position: center;
   background-size: cover;
   margin-right: 30px;
   margin-top: 30px;
-  opacity: 0.65;
+  opacity: 0.55;
   transition: 800ms;
   border-radius: 10px;
 }
@@ -18,13 +18,11 @@
 }
 
 .track__info {
-  margin-top: 5px;
-  padding: 0 5px;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  color: rgb(0, 0, 0);
+
+  color: white;
 }
 
 .track__info > p {
@@ -33,19 +31,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   height: 30px;
   width: 80px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.397);
+  background-color: rgb(0, 0, 0);
 }
 
 .track__info > h2 {
-  background-color: rgba(255, 255, 255, 0.397);
+  background-color: rgb(0, 0, 0);
+  height: 40px;
 }
 
 .track__infoButtons {
-  margin-top: 200px;
+  margin-top: 5px;
+
   display: flex;
   flex-direction: column;
   width: 80px;
@@ -55,20 +53,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(251, 251, 251);
+  background-color: rgb(0, 0, 0);
   margin-bottom: 5px;
-  border-radius: 10px;
   border: none;
   outline: none;
-  transition: 400ms;
+  transition: 1000ms;
 }
 
 .track__infoButtons > button > .MuiSvgIcon-root {
   font-size: 40px;
+  color: white;
 }
 
 .track__infoButtons > button:hover {
   cursor: pointer;
   outline: none;
-  background-color: rgb(200, 200, 200);
+  background-color: rgb(31, 31, 31);
+  transform: translateX(20px);
 }

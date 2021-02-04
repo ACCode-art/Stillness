@@ -4,7 +4,7 @@
   align-items: center;
   color: white;
   height: 6vh;
-  background-color: #202c39;
+  background-color: #172029;
   padding: 0 2%;
 }
 
@@ -29,6 +29,18 @@
 }
 
 .header__center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+
+.header__center > p {
+  font-size: 0.7rem;
+}
+
+.header__centerTop {
   display: flex;
   justify-content: space-between;
   align-items: center;
