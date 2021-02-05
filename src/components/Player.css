@@ -1,0 +1,32 @@
+.player {
+  background-color: #010102;
+  height: 92vh;
+}
+
+.player__back > a {
+  font-size: 40px;
+  margin-left: 10px;
+  color: white;
+  transition: 600ms;
+}
+.player__back > a:hover {
+  color: rgba(255, 255, 255, 0.541);
+}
+
+.player > .player__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 86vh;
+}
+
+.player > .player__controls > .MuiSvgIcon-root {
+  font-size: 120px;
+  color: white;
+  transition: 600ms;
+}
+
+.player > .player__controls > .MuiSvgIcon-root:hover {
+  color: rgba(255, 255, 255, 0.541);
+  cursor: pointer;
+}

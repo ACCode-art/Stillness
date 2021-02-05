@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   color: white;
-  height: 6vh;
+  height: 8vh;
   background-color: #172029;
   padding: 0 2%;
 }
@@ -18,12 +18,13 @@
   margin-left: 5px;
 }
 
-.header__left > .MuiSvgIcon-root {
+.header__left > a > .MuiSvgIcon-root {
   font-size: 40px;
   transition: 400ms;
+  color: white;
 }
 
-.header__left > .MuiSvgIcon-root:hover {
+.header__left > a > .MuiSvgIcon-root:hover {
   cursor: pointer;
   color: rgb(200, 200, 200);
 }
@@ -31,31 +32,38 @@
 .header__center {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
   align-items: center;
   width: 200px;
 }
 
-.header__center > p {
-  font-size: 0.7rem;
+.header__centerBottom > .MuiSvgIcon-root {
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+
+.header__centerBottom > p {
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+.header__centerBottom {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__centerTop {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 200px;
 }
 
-.header__center > .MuiSlider-colorPrimary {
-  color: white;
-}
-
-.header__centerVolumeLeft {
-  padding-right: 8px;
-}
-.header__centerVolumeRight {
-  padding-left: 10px;
+.header__centerTop > .MuiSvgIcon-root {
+  cursor: pointer;
+  font-size: 30px;
 }
 
 .header__right {

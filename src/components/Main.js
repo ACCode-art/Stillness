@@ -5,8 +5,12 @@ import From from "../backgrounds/from.jpg";
 import Music from "../music/sitg.mp3";
 import Red from "../music/Red is.mp3";
 import Green from "../music/green.mp3";
+import Lost from "../music/Lost In The City.mp3";
+import Calls from "../music/9 Missed Calls.mp3";
+import Departure from "../music/Departure.mp3";
+import Garage from "../music/Garage Flowers.mp3";
 
-function Main({ value, setInfo, setIsPlaying }) {
+function Main({ value, setInfo, setIsPlaying, play }) {
   const infos = [
     {
       key: 1,
@@ -31,6 +35,38 @@ function Main({ value, setInfo, setIsPlaying }) {
         "https://images.unsplash.com/photo-1513569771920-c9e1d31714af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
       src: Green,
     },
+    {
+      key: 4,
+      title: "Lost In The City",
+      length: "4mins",
+      background:
+        "https://images.unsplash.com/photo-1512850183-6d7990f42385?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      src: Lost,
+    },
+    {
+      key: 5,
+      title: "9 Missed Calls",
+      length: "4mins",
+      background:
+        "https://images.unsplash.com/photo-1609407773578-bb62b921be84?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
+      src: Calls,
+    },
+    {
+      key: 6,
+      title: "Departure",
+      length: "4mins",
+      background:
+        "https://images.unsplash.com/photo-1517066843891-c08ec1576f16?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80",
+      src: Departure,
+    },
+    {
+      key: 6,
+      title: "Garage Flowers",
+      length: "4mins",
+      background:
+        "https://images.unsplash.com/photo-1432634372475-07b399e372ee?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80",
+      src: Garage,
+    },
   ];
 
   return (
@@ -45,6 +81,7 @@ function Main({ value, setInfo, setIsPlaying }) {
           value={value}
           setInfo={setInfo}
           setIsPlaying={setIsPlaying}
+          play={play}
         />
       ))}
     </div>

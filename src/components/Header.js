@@ -2,28 +2,24 @@ import { Avatar, Slider } from "@material-ui/core";
 import {
   AirlineSeatFlat,
   Favorite,
+  MusicNote,
+  PlayArrow,
   QueueMusic,
-  VolumeDown,
-  VolumeUp,
+  Stop,
 } from "@material-ui/icons";
 import React from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
-function Header({ value, setValue, changeVolume, info }) {
+function Header({ value, setValue, changeVolume, info, play, pause }) {
   console.log(`this is the ${value}`);
   return (
     <div className="header">
       <div className="header__left">
-        <AirlineSeatFlat />
+        <Link to="/">
+          <AirlineSeatFlat onClick={pause} />
+        </Link>
         <p>Stillness</p>
-      </div>
-      <div className="header__center">
-        <div className="header__centerTop">
-          <VolumeDown className="header__centerVolumeLeft" />
-          <Slider value={value} onChange={changeVolume} />
-          <VolumeUp className="header__centerVolumeRight" />
-        </div>
-        <p>{info}</p>
       </div>
 
       <div className="header__right">

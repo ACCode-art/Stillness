@@ -1,6 +1,6 @@
 .track {
   background-color: #fcf7f8;
-  width: 280px;
+  width: 277px;
   height: 400px;
 
   background-position: center;
@@ -17,57 +17,12 @@
   opacity: 1;
 }
 
-.track__info {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-
-  color: white;
-}
-
-.track__info > p {
-  margin-top: 5px;
-  font-style: italic;
+.track > p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.541);
+  color: white;
   height: 30px;
-  width: 80px;
-  background-color: rgb(0, 0, 0);
-}
-
-.track__info > h2 {
-  background-color: rgb(0, 0, 0);
-  height: 40px;
-}
-
-.track__infoButtons {
-  margin-top: 5px;
-
-  display: flex;
-  flex-direction: column;
-  width: 80px;
-}
-
-.track__infoButtons > button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(0, 0, 0);
-  margin-bottom: 5px;
-  border: none;
-  outline: none;
-  transition: 1000ms;
-}
-
-.track__infoButtons > button > .MuiSvgIcon-root {
-  font-size: 40px;
-  color: white;
-}
-
-.track__infoButtons > button:hover {
-  cursor: pointer;
-  outline: none;
-  background-color: rgb(31, 31, 31);
-  transform: translateX(20px);
+  max-width: 60%;
 }
