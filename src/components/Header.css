@@ -4,7 +4,7 @@
   align-items: center;
   color: white;
   height: 8vh;
-  background-color: #172029;
+  background-color: #0e141a;
   padding: 0 2%;
 }
 
@@ -70,7 +70,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 150px;
+  width: 250px;
 }
 
 .header__right > .MuiSvgIcon-root {
@@ -89,4 +89,19 @@
 .header__right > .MuiAvatar-root:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+
+.header__right > p {
+  opacity: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  height: 25px;
+  width: 80px;
+  transition: 600ms;
+}
+.header__right > p:hover {
+  opacity: 1;
+  cursor: pointer;
 }

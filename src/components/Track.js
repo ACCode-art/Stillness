@@ -26,8 +26,6 @@ function Track({
     setIsPlaying(true);
   }
 
-  // path to player
-
   return (
     <Link to="/player">
       <div

@@ -17,24 +17,31 @@ function App() {
 
   const [songTitle, setSongtitle] = useState("");
 
+  const [duration, setDuration] = useState(0);
+
+  const [tyme, setTyme] = useState(0);
+
   // play functionality
 
   const currentTrack = new Audio(info);
 
   function play() {
     currentTrack.volume = 1;
-    console.log(
-      `length of track: ${Math.ceil(currentTrack.duration / 100)} mins`
-    );
+
     currentTrack.play();
   }
+
+  function hello() {
+    // setDuration(currentTrack.duration / 60);
+    console.log("hello hayley");
+  }
+
   function pause() {
     currentTrack.volume = 1;
 
     currentTrack.pause();
   }
-
-  console.log(currentTrack);
+  console.log(duration);
   return (
     <Router>
       <div className="app">
@@ -43,7 +50,6 @@ function App() {
           changeVolume={changeVolume}
           setValue={setValue}
           info={info}
-          play={play}
           pause={pause}
         />
         <Switch>
@@ -56,7 +62,7 @@ function App() {
             />
           </Route>
           <Route path="/player" exact>
-            <Player play={play} pause={pause} />
+            <Player play={play} pause={pause} tyme={tyme} hello={hello} />
           </Route>
         </Switch>
       </div>

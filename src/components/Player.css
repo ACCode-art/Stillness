@@ -1,32 +1,62 @@
 .player {
-  background-color: #010102;
+  background-image: url("https://images.pexels.com/photos/2098428/pexels-photo-2098428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   height: 92vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.player__back > a {
-  font-size: 40px;
+.player__back > a > .MuiSvgIcon-root {
+  font-size: 30px;
+  margin-top: 10px;
   margin-left: 10px;
   color: white;
   transition: 600ms;
 }
-.player__back > a:hover {
+.player__back > a > .MuiSvgIcon-root:hover {
   color: rgba(255, 255, 255, 0.541);
+
+  transform: translateX(-5px);
 }
 
 .player > .player__controls {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 86vh;
 }
 
-.player > .player__controls > .MuiSvgIcon-root {
+.player__controls > .player__controlsTop > .MuiSvgIcon-root {
   font-size: 120px;
   color: white;
   transition: 600ms;
 }
 
-.player > .player__controls > .MuiSvgIcon-root:hover {
+.player__controls > .player__controlsTop > .MuiSvgIcon-root:hover {
   color: rgba(255, 255, 255, 0.541);
   cursor: pointer;
+  transform: scale(1.03);
+}
+
+.player__controls > .player__controlsBottom {
+  margin-top: 25px;
+  width: 70%;
+}
+
+.player__controls > .player__controlsBottom > .MuiSlider-root {
+  color: white;
+}
+
+.player__controls > p {
+  margin-top: 25px;
+  color: white;
+}
+
+.player__controlsBottom > .MuiSlider-root > .MuiSlider-rail {
+  height: 5px;
+}
+
+.player__controlsBottom > .MuiSlider-root > .MuiSlider-track {
+  height: 5px;
 }

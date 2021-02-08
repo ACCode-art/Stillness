@@ -9,6 +9,8 @@ import Lost from "../music/Lost In The City.mp3";
 import Calls from "../music/9 Missed Calls.mp3";
 import Departure from "../music/Departure.mp3";
 import Garage from "../music/Garage Flowers.mp3";
+import Shirt from "../music/Your Faviourite Shirt.mp3";
+import Video from "../backgrounds/hello.mp4";
 
 function Main({ value, setInfo, setIsPlaying, play }) {
   const infos = [
@@ -60,30 +62,42 @@ function Main({ value, setInfo, setIsPlaying, play }) {
       src: Departure,
     },
     {
-      key: 6,
+      key: 7,
       title: "Garage Flowers",
       length: "4mins",
       background:
         "https://images.unsplash.com/photo-1432634372475-07b399e372ee?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80",
       src: Garage,
     },
+    {
+      key: 8,
+      title: "Your Favourite Shirt",
+      length: "3mins",
+      background:
+        "https://images.unsplash.com/photo-1531169509526-f8f1fdaa4a67?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      src: Shirt,
+    },
   ];
 
   return (
     <div className="main">
-      {infos.map((info) => (
-        <Track
-          title={info.title}
-          length={info.length}
-          background={info.background}
-          src={info.src}
-          key={info.key}
-          value={value}
-          setInfo={setInfo}
-          setIsPlaying={setIsPlaying}
-          play={play}
-        />
-      ))}
+      <video src={Video} autoPlay loop muted></video>
+      <h2>Explore Music...</h2>
+      <div className="main__container">
+        {infos.map((info) => (
+          <Track
+            title={info.title}
+            length={info.length}
+            background={info.background}
+            src={info.src}
+            key={info.key}
+            value={value}
+            setInfo={setInfo}
+            setIsPlaying={setIsPlaying}
+            play={play}
+          />
+        ))}
+      </div>
     </div>
   );
 }

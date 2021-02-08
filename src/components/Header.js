@@ -23,6 +23,7 @@ function Header({ value, setValue, changeVolume, info, play, pause }) {
       </div>
 
       <div className="header__right">
+        <p>Donate</p>
         <QueueMusic />
         <Favorite />
         <Avatar src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fres.cloudinary.com%2Fheroespatches%2Fimage%2Fupload%2Fv1483417095%2Fhero%2Fthrall.jpg&f=1&nofb=1" />

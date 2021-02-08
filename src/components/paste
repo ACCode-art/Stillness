@@ -1,0 +1,19 @@
+.main {
+  background-color: #010102;
+  display: flex;
+  flex-wrap: wrap;
+  height: 92vh;
+  padding: 0 2%;
+  overflow-y: scroll;
+}
+
+  setInterval(function () {
+      const tyme = currentTrack.currentTime;
+      const dur = currentTrack.duration;
+      setTyme(tyme / dur);
+    }, 1000);
+
+    onClick={function (event) {
+              play();
+              hello();
+            }}
